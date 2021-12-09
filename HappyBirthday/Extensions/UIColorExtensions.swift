@@ -16,11 +16,19 @@ extension UIColor {
         self.init(red256: red, green256: green, blue256: blue, alpha: 1.0)
     }
     
+    public static var selectedAlpha: CGFloat {
+        return 0.6
+    }
+    
     static var backgroundColor: UIColor {
         return UIColor(red: 218, green: 241, blue: 246)
     }
     
     static var textColor: UIColor {
         return UIColor(red: 57, green: 69, blue: 98)
+    }
+    
+    static var buttonBackgourndColor: UIColor {
+        return UIColor(red: 239, green: 123, blue: 123)
     }
 }

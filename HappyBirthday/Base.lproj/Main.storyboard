@@ -1,24 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController extendedLayoutIncludesOpaqueBars="YES" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="DetailsViewController" customModule="HappyBirthday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCr-hF-TPh">
+                                <rect key="frame" x="50" y="64" width="314" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GNt-xU-OYb">
+                                <rect key="frame" x="50" y="106" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="o7x-LC-Wmw">
+                                <rect key="frame" x="0.0" y="156" width="414" height="216"/>
+                            </datePicker>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPlaceHolderBlue" translatesAutoresizingMaskIntoConstraints="NO" id="ZRZ-OS-RDm">
+                                <rect key="frame" x="84" y="392" width="246" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZRZ-OS-RDm" secondAttribute="height" multiplier="1:1" constant="1" id="8z5-l1-gzC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDz-Yw-EQh">
+                                <rect key="frame" x="84" y="392" width="246" height="245"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="defaultPlaceHolderBlue"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOsBgPelican2" translatesAutoresizingMaskIntoConstraints="NO" id="ppY-b1-cAb">
+                                <rect key="frame" x="0.0" y="229" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PeQ-zj-0FR" customClass="RoundedButton" customModule="HappyBirthday" customModuleProvider="target">
+                                <rect key="frame" x="195" y="754" width="24" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="oDN-cD-7Pp"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GNt-xU-OYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0R2-uf-GSw"/>
+                            <constraint firstItem="YDz-Yw-EQh" firstAttribute="bottom" secondItem="ZRZ-OS-RDm" secondAttribute="bottom" id="0eI-Qu-cWA"/>
+                            <constraint firstItem="DCr-hF-TPh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="5se-m2-7rc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PeQ-zj-0FR" secondAttribute="bottom" constant="66" id="6BI-W9-gQK"/>
+                            <constraint firstItem="ZRZ-OS-RDm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="DFS-pw-2ra"/>
+                            <constraint firstItem="YDz-Yw-EQh" firstAttribute="leading" secondItem="ZRZ-OS-RDm" secondAttribute="leading" id="DIO-Wd-fQ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o7x-LC-Wmw" secondAttribute="trailing" id="Ffo-Tj-5xm"/>
+                            <constraint firstAttribute="bottom" secondItem="ppY-b1-cAb" secondAttribute="bottom" id="Gz7-zV-2FW"/>
+                            <constraint firstItem="YDz-Yw-EQh" firstAttribute="trailing" secondItem="ZRZ-OS-RDm" secondAttribute="trailing" id="Ih8-Y2-GdK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GNt-xU-OYb" secondAttribute="trailing" constant="50" id="PK3-Fq-tng"/>
+                            <constraint firstItem="o7x-LC-Wmw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QHI-yP-nnS"/>
+                            <constraint firstItem="ppY-b1-cAb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="STU-lU-AvG"/>
+                            <constraint firstItem="DCr-hF-TPh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="V3Q-sm-ldE"/>
+                            <constraint firstItem="PeQ-zj-0FR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d6b-CG-Hoz"/>
+                            <constraint firstItem="ZRZ-OS-RDm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eMP-VR-TQS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZRZ-OS-RDm" secondAttribute="trailing" constant="50" id="efv-R3-aWN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DCr-hF-TPh" secondAttribute="trailing" constant="50" id="n6b-ff-LYn"/>
+                            <constraint firstItem="GNt-xU-OYb" firstAttribute="top" secondItem="DCr-hF-TPh" secondAttribute="bottom" constant="42" id="p8z-uR-aif"/>
+                            <constraint firstItem="ZRZ-OS-RDm" firstAttribute="top" secondItem="o7x-LC-Wmw" secondAttribute="bottom" constant="20" id="vTo-Vg-Qat"/>
+                            <constraint firstItem="o7x-LC-Wmw" firstAttribute="top" secondItem="GNt-xU-OYb" secondAttribute="bottom" constant="16" id="vsb-CB-H7c"/>
+                            <constraint firstItem="YDz-Yw-EQh" firstAttribute="top" secondItem="ZRZ-OS-RDm" secondAttribute="top" id="wdn-uj-6AF"/>
+                            <constraint firstItem="ppY-b1-cAb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z31-Op-uNh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appTitleLabel" destination="DCr-hF-TPh" id="0Yl-8b-hny"/>
+                        <outlet property="datePicker" destination="o7x-LC-Wmw" id="Zmu-0I-dQn"/>
+                        <outlet property="imageView" destination="ZRZ-OS-RDm" id="Kxm-ou-mm1"/>
+                        <outlet property="imageViewButton" destination="YDz-Yw-EQh" id="oTB-Lv-l5w"/>
+                        <outlet property="nameTextField" destination="GNt-xU-OYb" id="3cA-5r-Wy7"/>
+                        <outlet property="showBirthdayScreenButton" destination="PeQ-zj-0FR" id="Wmf-9p-XyT"/>
+                    </connections>
+                </viewController>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPlaceHolderBlue" width="222" height="222"/>
+        <image name="iOsBgPelican2" width="375" height="667"/>
+    </resources>
 </document>

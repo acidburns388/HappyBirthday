@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CB146EF0276210FD00D9119A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146EEF276210FD00D9119A /* AppDelegate.swift */; };
 		CB146EF2276210FD00D9119A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146EF1276210FD00D9119A /* SceneDelegate.swift */; };
-		CB146EF4276210FE00D9119A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146EF3276210FE00D9119A /* ViewController.swift */; };
+		CB146EF4276210FE00D9119A /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146EF3276210FE00D9119A /* DetailsViewController.swift */; };
 		CB146EF7276210FE00D9119A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB146EF5276210FE00D9119A /* Main.storyboard */; };
 		CB146EFA276210FE00D9119A /* HappyBirthday.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB146EF8276210FE00D9119A /* HappyBirthday.xcdatamodeld */; };
 		CB146EFC2762110100D9119A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB146EFB2762110100D9119A /* Assets.xcassets */; };
@@ -17,6 +17,11 @@
 		CB146F0A2762110100D9119A /* HappyBirthdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146F092762110100D9119A /* HappyBirthdayTests.swift */; };
 		CB146F142762110100D9119A /* HappyBirthdayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146F132762110100D9119A /* HappyBirthdayUITests.swift */; };
 		CB146F162762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146F152762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift */; };
+		CB9A0E1D27621BBF00731268 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E1C27621BBF00731268 /* UIColorExtensions.swift */; };
+		CB9A0E212762207A00731268 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E202762207A00731268 /* UIFontExtensions.swift */; };
+		CB9A0E252762236000731268 /* BentonSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9A0E242762236000731268 /* BentonSans-Medium.ttf */; };
+		CB9A0E3327623F0900731268 /* BentonSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9A0E3227623F0900731268 /* BentonSans-Regular.ttf */; };
+		CB9A0E3627623F6100731268 /* UIRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E3527623F6100731268 /* UIRoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,7 @@
 		CB146EEC276210FD00D9119A /* HappyBirthday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappyBirthday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB146EEF276210FD00D9119A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB146EF1276210FD00D9119A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB146EF3276210FE00D9119A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB146EF3276210FE00D9119A /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		CB146EF6276210FE00D9119A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB146EF9276210FE00D9119A /* HappyBirthday.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HappyBirthday.xcdatamodel; sourceTree = "<group>"; };
 		CB146EFB2762110100D9119A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		CB146F0F2762110100D9119A /* HappyBirthdayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyBirthdayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB146F132762110100D9119A /* HappyBirthdayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayUITests.swift; sourceTree = "<group>"; };
 		CB146F152762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB9A0E1C27621BBF00731268 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		CB9A0E202762207A00731268 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
+		CB9A0E242762236000731268 /* BentonSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Medium.ttf"; sourceTree = "<group>"; };
+		CB9A0E3227623F0900731268 /* BentonSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Regular.ttf"; sourceTree = "<group>"; };
+		CB9A0E3527623F6100731268 /* UIRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +113,15 @@
 			children = (
 				CB146EEF276210FD00D9119A /* AppDelegate.swift */,
 				CB146EF1276210FD00D9119A /* SceneDelegate.swift */,
-				CB146EF3276210FE00D9119A /* ViewController.swift */,
+				CB146EF3276210FE00D9119A /* DetailsViewController.swift */,
 				CB146EF5276210FE00D9119A /* Main.storyboard */,
-				CB146EFB2762110100D9119A /* Assets.xcassets */,
 				CB146EFD2762110100D9119A /* LaunchScreen.storyboard */,
 				CB146F002762110100D9119A /* Info.plist */,
 				CB146EF8276210FE00D9119A /* HappyBirthday.xcdatamodeld */,
+				CB9A0E222762214E00731268 /* Resources */,
+				CB9A0E262762261300731268 /* Utils */,
+				CB9A0E1B27621B9300731268 /* Extensions */,
+				CB9A0E3427623F1800731268 /* CustomViews */,
 			);
 			path = HappyBirthday;
 			sourceTree = "<group>";
@@ -128,6 +141,48 @@
 				CB146F152762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift */,
 			);
 			path = HappyBirthdayUITests;
+			sourceTree = "<group>";
+		};
+		CB9A0E1B27621B9300731268 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CB9A0E1C27621BBF00731268 /* UIColorExtensions.swift */,
+				CB9A0E202762207A00731268 /* UIFontExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CB9A0E222762214E00731268 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB9A0E232762216900731268 /* Fonts */,
+				CB146EFB2762110100D9119A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CB9A0E232762216900731268 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CB9A0E242762236000731268 /* BentonSans-Medium.ttf */,
+				CB9A0E3227623F0900731268 /* BentonSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CB9A0E262762261300731268 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CB9A0E3427623F1800731268 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CB9A0E3527623F6100731268 /* UIRoundedButton.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB146EFF2762110100D9119A /* LaunchScreen.storyboard in Resources */,
+				CB9A0E3327623F0900731268 /* BentonSans-Regular.ttf in Resources */,
+				CB9A0E252762236000731268 /* BentonSans-Medium.ttf in Resources */,
 				CB146EFC2762110100D9119A /* Assets.xcassets in Resources */,
 				CB146EF7276210FE00D9119A /* Main.storyboard in Resources */,
 			);
@@ -261,8 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB146EF4276210FE00D9119A /* ViewController.swift in Sources */,
+				CB146EF4276210FE00D9119A /* DetailsViewController.swift in Sources */,
 				CB146EF0276210FD00D9119A /* AppDelegate.swift in Sources */,
+				CB9A0E212762207A00731268 /* UIFontExtensions.swift in Sources */,
+				CB9A0E3627623F6100731268 /* UIRoundedButton.swift in Sources */,
+				CB9A0E1D27621BBF00731268 /* UIColorExtensions.swift in Sources */,
 				CB146EF2276210FD00D9119A /* SceneDelegate.swift in Sources */,
 				CB146EFA276210FE00D9119A /* HappyBirthday.xcdatamodeld in Sources */,
 			);
