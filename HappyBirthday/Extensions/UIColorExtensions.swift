@@ -31,4 +31,8 @@ extension UIColor {
     static var buttonBackgourndColor: UIColor {
         return UIColor(red: 239, green: 123, blue: 123)
     }
+    
+    static var borderColor: UIColor {
+        return UIColor(red: 139, green: 211, blue: 228)
+    }
 }

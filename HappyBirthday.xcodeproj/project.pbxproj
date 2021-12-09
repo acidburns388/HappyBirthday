@@ -22,6 +22,7 @@
 		CB9A0E252762236000731268 /* BentonSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9A0E242762236000731268 /* BentonSans-Medium.ttf */; };
 		CB9A0E3327623F0900731268 /* BentonSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9A0E3227623F0900731268 /* BentonSans-Regular.ttf */; };
 		CB9A0E3627623F6100731268 /* UIRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E3527623F6100731268 /* UIRoundedButton.swift */; };
+		CB9A0E382762553100731268 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E372762553100731268 /* ImagePickerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		CB9A0E242762236000731268 /* BentonSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Medium.ttf"; sourceTree = "<group>"; };
 		CB9A0E3227623F0900731268 /* BentonSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Regular.ttf"; sourceTree = "<group>"; };
 		CB9A0E3527623F6100731268 /* UIRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRoundedButton.swift; sourceTree = "<group>"; };
+		CB9A0E372762553100731268 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		CB9A0E262762261300731268 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CB9A0E372762553100731268 /* ImagePickerManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				CB9A0E1D27621BBF00731268 /* UIColorExtensions.swift in Sources */,
 				CB146EF2276210FD00D9119A /* SceneDelegate.swift in Sources */,
 				CB146EFA276210FE00D9119A /* HappyBirthday.xcdatamodeld in Sources */,
+				CB9A0E382762553100731268 /* ImagePickerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
