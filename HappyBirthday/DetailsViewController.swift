@@ -95,6 +95,27 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
             self.imageView.image = image
         }
     }
+    
+    @IBAction func onDatePickerValueChanged(_ sender: Any) {
+        defaults.set(datePicker.date, forKey: "date")
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if textField == nameTextField {
+            defaults.set(textField.text, forKey: "name")
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @IBAction func onImagePickClicked(_ sender: Any) {
+        ImagePickerManager().pickImage(self) { image in
+            self.imageView.image = image
+        }
+    }
 }
 
     
