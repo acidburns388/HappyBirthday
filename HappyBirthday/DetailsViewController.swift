@@ -80,29 +80,8 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
     }
     
     func validateNameAndDate() {
-        if nameTextField.text != "name" && datePicker.date != Date() {
+        if nameTextField.text != "Name" && datePicker.date != Date() {
             showBirthdayScreenButton.isEnabled = true
-        }
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    @IBAction func onImagePickClicked(_ sender: Any) {
-        ImagePickerManager().pickImage(self) { image in
-            self.imageView.image = image
-        }
-    }
-    
-    @IBAction func onDatePickerValueChanged(_ sender: Any) {
-        defaults.set(datePicker.date, forKey: "date")
-    }
-    
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        if textField == nameTextField {
-            defaults.set(textField.text, forKey: "name")
         }
     }
     
