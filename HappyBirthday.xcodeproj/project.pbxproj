@@ -17,6 +17,7 @@
 		CB146F0A2762110100D9119A /* HappyBirthdayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146F092762110100D9119A /* HappyBirthdayTests.swift */; };
 		CB146F142762110100D9119A /* HappyBirthdayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146F132762110100D9119A /* HappyBirthdayUITests.swift */; };
 		CB146F162762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146F152762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift */; };
+		CB6EE8802762678B00666B92 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE87F2762678B00666B92 /* ImagePickerManager.swift */; };
 		CB9A0E1D27621BBF00731268 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E1C27621BBF00731268 /* UIColorExtensions.swift */; };
 		CB9A0E212762207A00731268 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E202762207A00731268 /* UIFontExtensions.swift */; };
 		CB9A0E252762236000731268 /* BentonSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9A0E242762236000731268 /* BentonSans-Medium.ttf */; };
@@ -56,6 +57,7 @@
 		CB146F0F2762110100D9119A /* HappyBirthdayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappyBirthdayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB146F132762110100D9119A /* HappyBirthdayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayUITests.swift; sourceTree = "<group>"; };
 		CB146F152762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB6EE87F2762678B00666B92 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		CB9A0E1C27621BBF00731268 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		CB9A0E202762207A00731268 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		CB9A0E242762236000731268 /* BentonSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Medium.ttf"; sourceTree = "<group>"; };
@@ -119,7 +121,7 @@
 				CB146F002762110100D9119A /* Info.plist */,
 				CB146EF8276210FE00D9119A /* HappyBirthday.xcdatamodeld */,
 				CB9A0E222762214E00731268 /* Resources */,
-				CB9A0E262762261300731268 /* Utils */,
+				CB6EE87E2762677C00666B92 /* Utils */,
 				CB9A0E1B27621B9300731268 /* Extensions */,
 				CB9A0E3427623F1800731268 /* CustomViews */,
 			);
@@ -141,6 +143,14 @@
 				CB146F152762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift */,
 			);
 			path = HappyBirthdayUITests;
+			sourceTree = "<group>";
+		};
+		CB6EE87E2762677C00666B92 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CB6EE87F2762678B00666B92 /* ImagePickerManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CB9A0E1B27621B9300731268 /* Extensions */ = {
@@ -168,13 +178,6 @@
 				CB9A0E3227623F0900731268 /* BentonSans-Regular.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		CB9A0E262762261300731268 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		CB9A0E3427623F1800731268 /* CustomViews */ = {
@@ -325,6 +328,7 @@
 				CB9A0E1D27621BBF00731268 /* UIColorExtensions.swift in Sources */,
 				CB146EF2276210FD00D9119A /* SceneDelegate.swift in Sources */,
 				CB146EFA276210FE00D9119A /* HappyBirthday.xcdatamodeld in Sources */,
+				CB6EE8802762678B00666B92 /* ImagePickerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
