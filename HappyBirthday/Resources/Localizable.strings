@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  HappyBirthday
+
+  Created by intellithings on 11/12/2021.
+  
+*/
+
+"happyBirthday" = "happy birthday";
+"ShowBirthdayScreen" = "Show birthday screen";
+"name" = "Name";
+"todayIs" = "TODAY %@ IS";
+"yearOld" = "year old";
+"monthOld" = "month old";
+"shareTheNews" = "Share the news";

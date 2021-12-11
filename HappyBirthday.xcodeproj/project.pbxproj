@@ -18,6 +18,13 @@
 		CB146F142762110100D9119A /* HappyBirthdayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146F132762110100D9119A /* HappyBirthdayUITests.swift */; };
 		CB146F162762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB146F152762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift */; };
 		CB6EE8802762678B00666B92 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE87F2762678B00666B92 /* ImagePickerManager.swift */; };
+		CB6EE88227626C9000666B92 /* BirthdayScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE88127626C9000666B92 /* BirthdayScreenViewController.swift */; };
+		CB6EE8862762774200666B92 /* ImageSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE8852762774200666B92 /* ImageSelectionView.swift */; };
+		CB6EE8882763957500666B92 /* BirthdayScreenThemeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE8872763957500666B92 /* BirthdayScreenThemeEnum.swift */; };
+		CB6EE88A2763BDA900666B92 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE8892763BDA900666B92 /* DateExtensions.swift */; };
+		CB6EE88C2764B43400666B92 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE88B2764B43400666B92 /* Utils.swift */; };
+		CB6EE88E2764BB9700666B92 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB6EE88D2764BB9700666B92 /* Localizable.strings */; };
+		CB6EE8902764BBB200666B92 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6EE88F2764BBB200666B92 /* Localized.swift */; };
 		CB9A0E1D27621BBF00731268 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E1C27621BBF00731268 /* UIColorExtensions.swift */; };
 		CB9A0E212762207A00731268 /* UIFontExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9A0E202762207A00731268 /* UIFontExtensions.swift */; };
 		CB9A0E252762236000731268 /* BentonSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB9A0E242762236000731268 /* BentonSans-Medium.ttf */; };
@@ -58,6 +65,13 @@
 		CB146F132762110100D9119A /* HappyBirthdayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayUITests.swift; sourceTree = "<group>"; };
 		CB146F152762110100D9119A /* HappyBirthdayUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyBirthdayUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB6EE87F2762678B00666B92 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		CB6EE88127626C9000666B92 /* BirthdayScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayScreenViewController.swift; sourceTree = "<group>"; };
+		CB6EE8852762774200666B92 /* ImageSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionView.swift; sourceTree = "<group>"; };
+		CB6EE8872763957500666B92 /* BirthdayScreenThemeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayScreenThemeEnum.swift; sourceTree = "<group>"; };
+		CB6EE8892763BDA900666B92 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		CB6EE88B2764B43400666B92 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CB6EE88D2764BB9700666B92 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CB6EE88F2764BBB200666B92 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
 		CB9A0E1C27621BBF00731268 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		CB9A0E202762207A00731268 /* UIFontExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtensions.swift; sourceTree = "<group>"; };
 		CB9A0E242762236000731268 /* BentonSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Medium.ttf"; sourceTree = "<group>"; };
@@ -116,6 +130,8 @@
 				CB146EEF276210FD00D9119A /* AppDelegate.swift */,
 				CB146EF1276210FD00D9119A /* SceneDelegate.swift */,
 				CB146EF3276210FE00D9119A /* DetailsViewController.swift */,
+				CB6EE88127626C9000666B92 /* BirthdayScreenViewController.swift */,
+				CB6EE8872763957500666B92 /* BirthdayScreenThemeEnum.swift */,
 				CB146EF5276210FE00D9119A /* Main.storyboard */,
 				CB146EFD2762110100D9119A /* LaunchScreen.storyboard */,
 				CB146F002762110100D9119A /* Info.plist */,
@@ -149,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				CB6EE87F2762678B00666B92 /* ImagePickerManager.swift */,
+				CB6EE88B2764B43400666B92 /* Utils.swift */,
+				CB6EE88F2764BBB200666B92 /* Localized.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -158,6 +176,7 @@
 			children = (
 				CB9A0E1C27621BBF00731268 /* UIColorExtensions.swift */,
 				CB9A0E202762207A00731268 /* UIFontExtensions.swift */,
+				CB6EE8892763BDA900666B92 /* DateExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +186,7 @@
 			children = (
 				CB9A0E232762216900731268 /* Fonts */,
 				CB146EFB2762110100D9119A /* Assets.xcassets */,
+				CB6EE88D2764BB9700666B92 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -184,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				CB9A0E3527623F6100731268 /* UIRoundedButton.swift */,
+				CB6EE8852762774200666B92 /* ImageSelectionView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -293,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB146EFF2762110100D9119A /* LaunchScreen.storyboard in Resources */,
+				CB6EE88E2764BB9700666B92 /* Localizable.strings in Resources */,
 				CB9A0E3327623F0900731268 /* BentonSans-Regular.ttf in Resources */,
 				CB9A0E252762236000731268 /* BentonSans-Medium.ttf in Resources */,
 				CB146EFC2762110100D9119A /* Assets.xcassets in Resources */,
@@ -323,8 +345,14 @@
 			files = (
 				CB146EF4276210FE00D9119A /* DetailsViewController.swift in Sources */,
 				CB146EF0276210FD00D9119A /* AppDelegate.swift in Sources */,
+				CB6EE8882763957500666B92 /* BirthdayScreenThemeEnum.swift in Sources */,
 				CB9A0E212762207A00731268 /* UIFontExtensions.swift in Sources */,
+				CB6EE88227626C9000666B92 /* BirthdayScreenViewController.swift in Sources */,
+				CB6EE8902764BBB200666B92 /* Localized.swift in Sources */,
+				CB6EE88C2764B43400666B92 /* Utils.swift in Sources */,
+				CB6EE88A2763BDA900666B92 /* DateExtensions.swift in Sources */,
 				CB9A0E3627623F6100731268 /* UIRoundedButton.swift in Sources */,
+				CB6EE8862762774200666B92 /* ImageSelectionView.swift in Sources */,
 				CB9A0E1D27621BBF00731268 /* UIColorExtensions.swift in Sources */,
 				CB146EF2276210FD00D9119A /* SceneDelegate.swift in Sources */,
 				CB146EFA276210FE00D9119A /* HappyBirthday.xcdatamodeld in Sources */,

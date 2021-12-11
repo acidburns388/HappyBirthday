@@ -5,13 +5,9 @@
 //  Created by intellithings on 09/12/2021.
 //
 
-import UIKit
+import UIKit.UIButton
 
-class RoundedButton: UIButton {
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
+class RoundedButton: UIButton {   
     override func layoutSubviews() {
         super.layoutSubviews()
         

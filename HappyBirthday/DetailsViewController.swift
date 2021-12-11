@@ -12,7 +12,7 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
     @IBOutlet weak var appTitleLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: ImageSelectionView!
     @IBOutlet weak var imageViewButton: UIButton!
     @IBOutlet weak var showBirthdayScreenButton: RoundedButton!
     
@@ -22,11 +22,21 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .backgroundColor
+        configureUI()
+        
+        validateNameAndDate()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    func configureUI() {
+        view.backgroundColor = .pelicanBackgroundColor
         
         appTitleLabel.textColor = .textColor
         appTitleLabel.font = .bentonSansMedium(size: 21)
-        appTitleLabel.text = "happy birthday".uppercased()
+        appTitleLabel.text = LocalizedString.init("happyBirthday").resolve().uppercased()
         
         nameTextField.backgroundColor = .white
         nameTextField.layer.cornerRadius = 4.0
@@ -35,7 +45,7 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
         nameTextField.layer.borderWidth = 0.1
         nameTextField.textColor = .textColor
         
-        nameTextField.text = defaults.value(forKey: "name") as? String ?? "Name"
+        nameTextField.text = defaults.value(forKey: "name") as? String ?? LocalizedString.init("name").resolve()
         nameTextField.returnKeyType = .done
         nameTextField.delegate = self
         
@@ -45,31 +55,39 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
         if let savedDate: Date = defaults.value(forKey: "date") as? Date {
             datePicker.date = savedDate
         }
-                
-        if let image: UIImage = UIImage(named: "defaultPlaceHolderBlue") {
-            imageView.layer.borderWidth = 7.0
-            imageView.layer.masksToBounds = false
-            imageView.layer.borderColor = UIColor.borderColor.cgColor
-            imageView.layer.cornerRadius = image.size.height / 2
-            imageView.clipsToBounds = true
-            
-            imageView.image = image
-        }
         
         if let saveImaged: UIImage = ImagePickerManager().getSavedImage() {
             imageView.image = saveImaged
         }
-
-        showBirthdayScreenButton.setTitle("Show birthday screen".uppercased(), for: .normal)
+        
+        showBirthdayScreenButton.setTitle(LocalizedString.init("ShowBirthdayScreen").resolve().uppercased(), for: .normal)
         showBirthdayScreenButton.setTitleColor(.white, for: .normal)
         showBirthdayScreenButton.isEnabled = false
-        
-        validateNameAndDate()
     }
     
     @IBAction func onDatePickerValueChanged(_ sender: Any) {
+        validateDateIsInRange()
+        
         defaults.set(datePicker.date, forKey: "date")
         validateNameAndDate()
+    }
+    
+    func validateDateIsInRange() {
+        let currentDate: Date = Date()
+        
+        if datePicker.date > currentDate {
+            datePicker.date = currentDate
+        }
+        
+        let yearsToAdd: Int = -12
+        var dateComponent: DateComponents = DateComponents()
+        dateComponent.year = yearsToAdd
+        
+        if let tewlveYearsDate: Date = Calendar.current.date(byAdding: dateComponent, to: currentDate) {
+            if datePicker.date < tewlveYearsDate {
+                datePicker.date = tewlveYearsDate
+            }
+        }
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
@@ -80,7 +98,7 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
     }
     
     func validateNameAndDate() {
-        if nameTextField.text != "Name" && datePicker.date != Date() {
+        if nameTextField.text != LocalizedString.init("name").resolve() && datePicker.date != Date() {
             showBirthdayScreenButton.isEnabled = true
         }
     }
@@ -95,6 +113,15 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
             self.imageView.image = image
         }
     }
+    
+    @IBAction func onShowBirthdayScreenClicked(_ sender: Any) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        if let birthdayScreenViewController = storyBoard.instantiateViewController(withIdentifier: "BirthdayScreenViewController") as? BirthdayScreenViewController {
+            birthdayScreenViewController.date = datePicker.date
+            birthdayScreenViewController.name = nameTextField.text ?? ""
+            self.navigationController?.pushViewController(birthdayScreenViewController, animated: true)
+        }
+    }
 }
 
-    
+

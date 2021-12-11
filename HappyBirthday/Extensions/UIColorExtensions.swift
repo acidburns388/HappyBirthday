@@ -20,8 +20,16 @@ extension UIColor {
         return 0.6
     }
     
-    static var backgroundColor: UIColor {
+    static var pelicanBackgroundColor: UIColor {
         return UIColor(red: 218, green: 241, blue: 246)
+    }
+    
+    static var foxBackgroundColor: UIColor {
+        return UIColor(red: 197, green: 232, blue: 223)
+    }
+    
+    static var elephentBackgroundColor: UIColor {
+        return UIColor(red: 254, green: 239, blue: 203)
     }
     
     static var textColor: UIColor {
@@ -32,7 +40,15 @@ extension UIColor {
         return UIColor(red: 239, green: 123, blue: 123)
     }
     
-    static var borderColor: UIColor {
+    static var pelicanBorderColor: UIColor {
         return UIColor(red: 139, green: 221, blue: 228)
+    }
+    
+    static var foxBorderColor: UIColor {
+        return UIColor(red: 111, green: 197, blue: 175)
+    }
+    
+    static var elephentBorderColor: UIColor {
+        return UIColor(red: 254, green: 190, blue: 30)
     }
 }
