@@ -147,6 +147,9 @@
                                 <rect key="frame" x="96.5" y="490" width="221" height="221"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="onImagePickClicked:" destination="Vtr-oK-wl4" eventType="touchUpInside" id="0ty-Du-DyI"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOsBgPelican2" translatesAutoresizingMaskIntoConstraints="NO" id="WlG-k3-25I">
                                 <rect key="frame" x="0.0" y="229" width="414" height="667"/>
@@ -163,6 +166,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
+                                    <action selector="onShareTheNewsButtonClicked:" destination="Vtr-oK-wl4" eventType="touchUpInside" id="c6E-X1-Ajs"/>
                                     <action selector="onShowBirthdayScreenClicked:" destination="Am5-RX-ljv" eventType="touchUpInside" id="n26-up-XSH"/>
                                 </connections>
                             </button>

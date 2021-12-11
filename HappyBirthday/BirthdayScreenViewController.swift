@@ -22,6 +22,7 @@ class BirthdayScreenViewController: UIViewController, UINavigationControllerDele
     var date: Date?
     var name: String = ""
     var imagePicker: UIImagePickerController = UIImagePickerController()
+    var ageToShare: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +55,7 @@ class BirthdayScreenViewController: UIViewController, UINavigationControllerDele
         
         nameLabel.textColor = .textColor
         nameLabel.font = .bentonSansMedium(size: 21)
-        nameLabel.text = String(format: LocalizedString.init("todayIs").resolve().uppercased(), name.uppercased()) 
+        nameLabel.text = String(format: LocalizedString.init("todayIs").resolve().uppercased(), name.uppercased())
         
         ageLabel.textColor = .textColor
         ageLabel.font = .bentonSansMedium(size: 21)
@@ -95,7 +96,7 @@ class BirthdayScreenViewController: UIViewController, UINavigationControllerDele
                 
                 if annualDaysDifference >= 365 {
                     let yearsToDispaly: Int = annualDaysDifference / 365
-                    
+                    self.ageToShare = yearsToDispaly
                     ageImageView.image = UIImage(named: "ageNumber\(yearsToDispaly)")
                     ageLabel.text = LocalizedString.init("yearOld").resolve().uppercased()
                 } else {
@@ -114,6 +115,7 @@ class BirthdayScreenViewController: UIViewController, UINavigationControllerDele
                         }
                     }
                     
+                    self.ageToShare = monthsToDispaly
                     ageImageView.image = UIImage(named: "ageNumber\(monthsToDispaly)")
                     ageLabel.text = LocalizedString.init("monthOld").resolve().uppercased()
                 }
@@ -121,7 +123,14 @@ class BirthdayScreenViewController: UIViewController, UINavigationControllerDele
         }
     }
     
-    
+    @IBAction func onShareTheNewsButtonClicked(_ sender: Any) {
+        if let image: UIImage = self.imageView.image, let ageText: String = ageLabel.text, let ageToShare: Int = self.ageToShare {
+            let message: String = String(format: LocalizedString.init("todayIs").resolve().uppercased(), name.uppercased()) + " \(ageToShare) " + ageText
+            
+            let activityViewController: UIActivityViewController = UIActivityViewController(activityItems: [image, message], applicationActivities: nil)
+            self.navigationController?.present(activityViewController, animated: true, completion: nil)
+        }
+    }
 }
 
 

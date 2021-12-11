@@ -10,10 +10,10 @@ import UIKit
 
 class ImagePickerManager: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    var picker = UIImagePickerController();
-    var alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
+    var picker: UIImagePickerController = UIImagePickerController()
+    var alert: UIAlertController = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
     var viewController: UIViewController?
-    var pickImageCallback : ((UIImage) -> ())?;
+    var pickImageCallback: ((UIImage) -> ())?
     
     override init(){
         super.init()
