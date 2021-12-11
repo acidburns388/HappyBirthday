@@ -111,6 +111,7 @@ class DetailsViewController: UIViewController, UITextFieldDelegate, UINavigation
     @IBAction func onImagePickClicked(_ sender: Any) {
         ImagePickerManager().pickImage(self) { image in
             self.imageView.image = image
+            self.imageView.layoutSubviews()
         }
     }
     
